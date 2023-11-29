@@ -8,7 +8,7 @@ void main()
     int marks[10], *m, Distinction = 0, First_class = 0, Pass = 0, Fail = 0;
     m = marks;
 
-    // Scanning the marks.
+    // Scanning the marks of the students.
     for (int i = 0; i < 10; i++)
     {
         printf("Enter the marks #%d : ", i + 1);

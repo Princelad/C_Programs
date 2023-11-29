@@ -33,7 +33,7 @@ int main()
     scanf("%f", &e1.salary);
 
     // Printing the employee info.
-    printf("name : %s\n", e1.c1.name);
+    printf("\n\nname : %s\n", e1.c1.name);
     printf("age : %d\n", e1.c1.age);
     printf("address : %s\n", e1.c1.address);
     printf("salary : %.2f\n", e1.salary);

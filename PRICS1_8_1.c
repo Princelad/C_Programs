@@ -12,7 +12,7 @@ int str_len(char str[])
     }
     return i;
 }
-    
+
 int main()
 {
     // Creating variable and character arrays.
@@ -141,8 +141,8 @@ retry:
         i = str_len(str1);
         j = 0;
 
-        // Appending elements of str2 to str1. 
-        while (str2 != '\0')
+        // Appending elements of str2 to str1.
+        while (str2[j] != '\0')
         {
             str1[i] = str2[j];
             i++;

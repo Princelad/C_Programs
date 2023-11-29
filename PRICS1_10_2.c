@@ -36,7 +36,7 @@ void main()
     scanf("%d", &f.flag);
 
     // Printing book_info.
-    printf("Accession Number\tTitle\tAuthor's name\tPrice\tAvailability\n");
+    printf("\n\nAccession Number\tTitle\tAuthor's name\tPrice\tAvailability\n");
     printf("%d\t%s\t%s\t%d\t%s", access_num.accession_number, Title.title, Author.author, Price.price, (f.flag == 1 ? "Yes" : "No"));
 
     printf("\n\n23CS037_Prince\n");

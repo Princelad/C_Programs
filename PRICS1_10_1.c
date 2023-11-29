@@ -40,7 +40,7 @@ void main()
         scanf("%f", &book[i].amount);
     }
 
-    printf("Book Title\t|\tAuthor name\t|\tAmount of book\n");
+    printf("\n\nBook Title\t|\tAuthor name\t|\tAmount of book\n");
 
     // Printing bookinfo.
     for (int i = 0; i < num; i++)

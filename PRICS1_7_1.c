@@ -12,6 +12,7 @@ int main()
     printf("Enter the number of entries: ");
     scanf("%d", &Limit);
 
+    // Dynamic memory allocation.
     n = (int *)malloc(Limit * sizeof(int));
     if (n == NULL)
     {

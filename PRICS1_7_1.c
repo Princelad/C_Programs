@@ -24,7 +24,7 @@ int main()
     printf("Enter the numbers:\n");
     for (int i = 0; i < Limit; i++)
     {
-        if (scanf("%d", &n[i]) != 0)
+        if (scanf("%d", &n[i]) != 1)
         {
             printf("Error while scanning enter a integer.\n");
             exit(1);

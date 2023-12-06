@@ -1,6 +1,7 @@
 /*This program is prepared by 23CS037 Prince Kirankumar Lad*/
 
 #include <stdio.h>
+#include <stdlib.h>
 
 // Creating structure for storing details of the books.
 struct Book_Detail
@@ -18,16 +19,24 @@ void books(bookInfo a)
     printf("%s\t|\t%s\t|\t%.2f\n", a.title, a.author, a.amount);
 }
 
-void main()
+int main()
 {
     // Creating 10 members of the structure bookinfo.
-    bookInfo book[10];
+    bookInfo *book;
     // Creating variable for number of books to be entered.
     int num;
 
     // Scanning the number of books.
     printf("Enter the number of books:");
     scanf("%d", &num);
+
+    // Dynamic memory allocation.
+    book = (bookInfo *)calloc(num, sizeof(bookInfo));
+    if (book == NULL)
+    {
+        printf("Error in memory allocation.");
+        exit(0);
+    }
 
     // Scanning the bookinfo.
     for (int i = 0; i < num; i++)
@@ -48,5 +57,9 @@ void main()
         books(book[i]);
     }
 
+    // Freeing the allocation.
+    free(book);
+
     printf("\n\n23CS037_Prince\n");
+    return 0;
 }

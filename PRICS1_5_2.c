@@ -15,9 +15,9 @@ int main()
     scanf("%f %f", &x3, &y3); // Scanning the values of two co-ordinates x3 and y3.
 
     // Calculating the slopes
-    s1 = fabs(y2 - y1) / (x2 - x1);
-    s2 = fabs(y3 - y2) / (x3 - x2);
-    s3 = fabs(y3 - y1) / (x3 - x1);
+    s1 = fabs((y2 - y1) / (x2 - x1));
+    s2 = fabs((y3 - y2) / (x3 - x2));
+    s3 = fabs((y3 - y1) / (x3 - x1));
 
     if (s1 == s2 && s1 == s3) // Checking weather all the slopes are equal or not.
     {
